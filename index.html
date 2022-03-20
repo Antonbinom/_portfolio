@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.min.css">
+	<script defer src="./js/tabs.js"></script>
 </head>
 
 <body>
@@ -67,7 +68,7 @@
 						</div>
 						<img class="offer__photo" src="./img/photo.png" alt="Фото">
 					</div>
-					
+
 					<a href="#design" class="main__scroll" aria-label="к следующему экрану"></a>
 
 				</div>
@@ -87,15 +88,15 @@
 					<img src="img/example/image-2.png" alt="A 200" class="feature__img design-block__img hidden"
 						data-tabs-field="body">
 					<div class="design-text">
-						<h2 class="section__title design__title">
+						<h2 class="section__title design__title" data-tabs-field="interior">
 							Портфолио&nbsp;</h2>
-						<h2 class="section__title design__title hidden">
+						<h2 class="section__title design__title hidden" data-tabs-field="body">
 							Притягивает взгляды
 						</h2>
 						<ul class="design-list">
 							<li>
-								<button type="button" class="design-list__item design-list__item_active"
-									data-tabs-handler="interior" data-some-attr="attr">Примеры сайтов</button>
+								<button type="button" class="design-list__item design-list__item_active" data-tabs-handler="interior"
+									data-some-attr="attr">Примеры сайтов</button>
 							</li>
 							<li>
 								<button type="button" class="design-list__item" data-tabs-handler="body">Примеры приложений</button>
@@ -105,7 +106,10 @@
 						<ul>
 							<li class="design__descr" data-tabs-field="interior">
 								<p class="design__description-text">
-									Разработал больше 30 сайтов и веб-приложений разной сложности. От страниц по продаже спортивного питания до приложения для сети городских пиццерий. Подхожу к работе как ваш партнёр: делаю работу качественно, держу в курсе, сдаю вовремя, помогаю сэкономить бюджет там, где это можно сделать без потери качества.</p>
+									Разработал больше 30 сайтов и веб-приложений разной сложности. От страниц по продаже спортивного
+									питания до приложения для сети городских пиццерий. Подхожу к работе как ваш партнёр: делаю работу
+									качественно, держу в курсе, сдаю вовремя, помогаю сэкономить бюджет там, где это можно сделать без
+									потери качества.</p>
 								<button class="more">
 									— Узнать больше
 								</button>
