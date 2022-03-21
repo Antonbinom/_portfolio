@@ -14,12 +14,12 @@ const timer = (deadline) => {
 		const seconds = Math.round(timeRemaining % 60)
 
 
-		const fDays = days < 10 ? '0' + days : days
+		// const fDays = days < 10 ? '0' + days : days
 		const fHours = hours < 10 ? '0' + hours : hours
 		const fMinutes = minutes < 10 ? '0' + minutes : minutes
 		const fSeconds = seconds < 10 ? '0' + seconds : seconds
 
-		timerBlock.textContent = `${fDays}дн / ${fHours}:${fMinutes}:${fSeconds}`
+		timerBlock.textContent = `${days}дн / ${fHours}:${fMinutes}:${fSeconds}`
 
 		if (timeRemaining <= 0) {
 			clearInterval(interval)
@@ -30,4 +30,4 @@ const timer = (deadline) => {
 	setInterval(updateClock, 500)
 }
 
-timer('31 march 2022')
+timer('26 march 2022')
